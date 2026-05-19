@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的個人網站</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .profile img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .profile h2 {
+      margin-top: 20px;
+      font-size: 32px;
+    }
+
+    .works {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .works h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .profile img {
+        width: 170px;
+        height: 170px;
+      }
+
+      .profile h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>我的個人網站</h1>
+    <p>歡迎來到我的作品展示頁</p>
+  </header>
+
+  <div class="container">
+
+    <!-- 個人資料 -->
+    <section class="profile">
+      <img src="me.jpg" alt="我的照片">
+      <h2>你的名字</h2>
+      <p>這裡可以放你的簡短自我介紹。</p>
+    </section>
+
+    <!-- 作品區 -->
+    <section class="works">
+      <h3>我的作品集</h3>
+      <p>點擊下方按鈕查看 PDF 作品。</p>
+
+      <a class="btn" href="work.pdf" target="_blank">
+        開啟作品集 PDF
+      </a>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 我的個人網站
+  </footer>
+
+</body>
+</html>
